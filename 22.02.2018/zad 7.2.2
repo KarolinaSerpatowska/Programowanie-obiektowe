@@ -1,0 +1,13 @@
+struct trojkat
+{
+   int a;
+   int b;
+   int c;
+};
+
+void funkcja(struct trojkat troj1, struct trojkat *troj2)
+{
+    troj1.a=troj2->a;
+    troj1.b=troj2->b;
+    troj1.c=troj2->c;
+}
