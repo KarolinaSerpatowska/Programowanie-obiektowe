@@ -8,31 +8,46 @@ private:
 	float y;
 
 public:
-	void setXY(float x, float y)
+	
+	float getX()
+	{
+		return x;
+	}
+	float getY()
+	{
+		return y;
+	}
+
+	void setX(float x)
 	{
 		this->x = x;
+	}
+	
+	void setY(float y)
+	{
 		this->y = y;
 	}
-	void showXY()
-	{
-		cout << x<<endl<<y<<endl;
-	}
+
 	void move(float x, float y)
 	{
 		this->x = this->x + x;
 		this->y = this->y + y;
+		cout << this->x << endl << this->y << endl;
 	}
+
 };
 
 
 int main()
 {
 	point p;
-	p.setXY(5.5, 2.5);
-	p.showXY();
-	p.move(1.5, 2.5);
-	p.showXY();
+	p.setX(2.5);
+	p.setY(3.5);
+	cout<<p.getX()<<endl<< p.getY()<<endl;
+	p.move(1, 2);
+
+	cin.get();
 	cin.get();
 
-    return 0;
+	return 0;
 }
