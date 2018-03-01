@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 class trojkat
 {
@@ -13,10 +14,12 @@ int main()
 {
 	trojkat x;
 	int obw;
-	x.a = 1;
-	x.b = 2;
-	x.c = 3;
+	cin >> x.a;
+	cin >> x.b;
+	cin >> x.c;
 	obw = x.a + x.b + x.c;
-
+	cout << obw;
+	cin.get();
+	cin.get();
     return 0;
 }
