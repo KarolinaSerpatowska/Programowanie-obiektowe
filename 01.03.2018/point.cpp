@@ -17,6 +17,11 @@ public:
 	{
 		cout << x<<endl<<y<<endl;
 	}
+	void move(float x, float y)
+	{
+		this->x = this->x + x;
+		this->y = this->y + y;
+	}
 };
 
 
@@ -24,6 +29,8 @@ int main()
 {
 	point p;
 	p.setXY(5.5, 2.5);
+	p.showXY();
+	p.move(1.5, 2.5);
 	p.showXY();
 	cin.get();
 
