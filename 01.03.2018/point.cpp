@@ -8,13 +8,14 @@ private:
 	float y;
 
 public:
-	void setX(float x)
+	void setXY(float x, float y)
 	{
 		this->x = x;
+		this->y = y;
 	}
-	void showX()
+	void showXY()
 	{
-		cout << x;
+		cout << x<<endl<<y<<endl;
 	}
 };
 
@@ -22,8 +23,8 @@ public:
 int main()
 {
 	point p;
-	p.setX(5.5);
-	p.showX();
+	p.setXY(5.5, 2.5);
+	p.showXY();
 	cin.get();
 
     return 0;
