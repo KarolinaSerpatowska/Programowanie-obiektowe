@@ -9,7 +9,6 @@ protected:
 	string login;
 	string password;
 public:
-	User() {};
 	User(string l, string p)
 	{
 		login = l;
@@ -33,7 +32,7 @@ class Student :public User
 {
 	string semestr;
 public:
-	Student(string s)
+	Student(string s) : User("", "")
 	{
 		semestr = s;
 	}
