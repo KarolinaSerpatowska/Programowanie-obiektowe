@@ -32,7 +32,7 @@ class Student :public User
 {
 	string semestr;
 public:
-	Student(string s) : User("", "")
+	Student(string s) : User("", ""), semestr(s)
 	{
 		semestr = s;
 	}
