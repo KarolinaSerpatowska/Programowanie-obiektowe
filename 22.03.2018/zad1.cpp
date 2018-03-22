@@ -39,12 +39,12 @@ public:
 		cout << wiek << endl;
 	}
 
-	void zwieksz_wiek(Villager *v)
+	void zwieksz_wiek()
 	{
 		wiek++;
 		if (wiek == max_wiek)
 		{
-			delete v;
+			delete this;
 		}
 	}
 
@@ -54,7 +54,7 @@ public:
 int main()
 {
 	Villager *v=new Villager("Jan",20,21);
-	v->zwieksz_wiek(v);
+	v->zwieksz_wiek();
 	
 
 
