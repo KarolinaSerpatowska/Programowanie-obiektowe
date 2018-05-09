@@ -6,7 +6,7 @@ using namespace std;
 
 bool cmp(int p1, int p2)
 {
-	return (p1 < p2 && p1!=p2);
+	return (p1 < p2);
 }
 
 
