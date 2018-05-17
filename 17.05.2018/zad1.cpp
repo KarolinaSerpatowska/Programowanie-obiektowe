@@ -6,7 +6,7 @@ template <class Typ>
 Typ &funkcja(Typ *t1, Typ *t2)
 {
 	Typ najmniejszy=*t1;
-	for (Typ *i = t1; i !=t2 ; i++)
+	for (auto *i = t1; i !=t2 ; i++)
 	{
 		if (najmniejszy > *i)
 		{
