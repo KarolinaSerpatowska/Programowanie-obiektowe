@@ -1,17 +1,21 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
-template <class Typ>
-Typ &funkcja(vector<Typ> v)
+template <template<typename ...> class C, typename T>
+T &funkcja(C<T>& a)
 {
-	sort(v.begin(), v.end());
-	Typ v1 = v.at(0);
-	return v1;
+	T &min = *a.begin();
+	for (auto i = a.begin(); i != a.end(); i++)
+	{
+		if (*i < min)
+		{
+			min = *i;
+		}
+	}
+	return min;
 }
-
 
 int main()
 {
@@ -20,8 +24,8 @@ int main()
 	v.push_back(10);
 	v.push_back(5);
 	v.push_back(0);
-	cout << funkcja<int>(v)<<endl;
+	cout << funkcja<vector,int>(v)<<endl;
 
 	system("PAUSE");
-    return 0;
+	return 0;
 }
