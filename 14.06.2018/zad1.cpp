@@ -16,7 +16,6 @@ int main()
 	v.push_back(1);
 	v.push_back(3);
 	v.push_back(7);
-	sort(v.begin(), v.end());
 	for (int i = 0; i <(int) v.size(); i++)
 	{
 		cout << v[i] << endl;
